@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dots Menu Hover Effects</title>
+    <!-- Css Files Start -->
+    <link rel="stylesheet" href="Style.css" />
+    <!-- Css Files End -->
+    <!-- -- Icon file Start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- -- Icon file End -->
+</head>
+
+<body>
+    <div class="navigation">
+        <span style="--i:0;--x:-1;--y:0">
+            <a href="#"><i class="icon fa fa-camera-retro"></i></a>
+        </span>
+        <span style="--i:1;--x:1;--y:0">
+            <a href="#"><i class="icon fa fa-diamond"></i></a>
+        </span>
+        <span style="--i:2;--x:0;--y:-1">
+            <a href="#"><i class="icon fa fa-magic"></i></a>
+        </span>
+        <span style="--i:3;--x:0;--y:1">
+            <a href="#"><i class="icon fas fa-landmark"></i></a>
+        </span>
+        <span style="--i:4;--x:1;--y:1">
+            <a href="#"><i class="icon fa fa-gear"></i></a>
+        </span>
+        <span style="--i:5;--x:-1;--y:-1">
+            <a href="#"><i class="icon fa fa-moon"></i></a>
+        </span>
+        <span style="--i:6;--x:0;--y:0">
+            <a href="#"><i class="icon fa fa-gamepad"></i></a>
+        </span>
+        <span style="--i:7;--x:-1;--y:1">
+            <a href="#"><i class="icon fas fa-water"></i></a>
+        </span>
+        <span style="--i:8;--x:1;--y:-1">
+            <a href="#"><i class="icon fa fa-times"></i></a>
+        </span>
+    </div>
+    <script src="jquery-2.2.4.min.js"></script>
+    <script>
+        $(".navigation").click(function () {
+            $(".navigation").toggleClass("active");
+        });
+    </script>
+</body>
+
+</html>

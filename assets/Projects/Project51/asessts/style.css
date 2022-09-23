@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Roboto");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container-fluid {
+    padding: 0px 140px;
+}
+
+.main {
+    width: 100%;
+    height: 850px;
+    border-radius: 25px;
+    padding: 0px 13px;
+}
+
+.carousel-container {
+    height: 850px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#MyCarousel {
+    padding: 14px 0px 0px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 820px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 0px solid transparent;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    color: #111;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: #fff;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #111;
+    border-right: 1px solid #111;
+    letter-spacing: 0.2em;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+    border: 1px solid #111;
+}
+
+.form-container {
+    height: 850px;
+    padding: 0px 19px 0px 0px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    perspective: 1000px;
+    transition: 0.3s ease-in-out;
+}
+
+.form-container .inner-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    border-radius: 15px;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: 97.5%;
+    height: 97%;
+    backface-visibility: hidden !important;
+    background: transparent !important;
+    border-radius: 15px;
+}
+
+.card-front .form,
+.card-back .form
+{
+ margin-top: 150px;
+}
+
+.card-front.hiddenfrontcard {
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.login-form,
+.signup-form {
+    float: right;
+}
+
+.media-facebook {
+    background-color: #3b5998;
+}
+
+.media-facebook {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: 46px;
+    padding-left: 64px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 46px;
+    text-decoration: none;
+}
+
+.media-facebook .fa-facebook {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    transition: width .3s;
+    background-color: rgba(255, 255, 255, 0.12);
+    font-size: 16px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.media-facebook:hover .fa-facebook {
+    width: 100%;
+    color: #fff;
+}
+
+.media-facebook:hover {
+    color: #3b5998;
+}
+
+.media-google {
+    background-color: #dd4b39;
+}
+
+.media-google {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: 46px;
+    padding-left: 64px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 46px;
+    text-decoration: none;
+}
+
+.media-google .fa-google {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    transition: width .3s;
+    background-color: rgba(255, 255, 255, 0.12);
+    font-size: 16px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.media-google:hover .fa-google {
+    width: 100%;
+    color: #fff;
+}
+
+.media-google:hover {
+    color: #dd4b39;
+}

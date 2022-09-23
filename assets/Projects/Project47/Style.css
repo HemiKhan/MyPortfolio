@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #1f83f2;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navigation {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: #212532;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transition-delay: 0.8s;
+}
+
+.navigation.active {
+  width: 200px;
+  height: 200px;
+  transition-delay: 0s;
+}
+
+.navigation span {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #ff2c74;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+  transform: translate(calc(12px * var(--x)), calc(12px * var(--y)));
+  transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+}
+
+.navigation.active span {
+  width: 45px;
+  height: 45px;
+  background: #ff2c74;
+  transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
+
+}
+
+.navigation span .icon {
+  transition: 0.5s;
+  font-size: 0em;
+}
+
+.navigation.active span .icon {
+  font-size: 1.35em;
+  color: #fff;
+}
+
+.navigation.active span:hover .icon {
+  color: #fff;
+  filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 5px #fff) drop-shadow(0 0 15px #fff);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Divide Cash Per Each</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha512-rO2SXEKBSICa/AfyhEK5ZqWFCOok1rcgPYfGOqtX35OyiraBg6Xa4NnBJwXgpIRoXeWjcAmcQniMhp22htDc6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- -- Icon file Start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- -- Icon file End -->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6 mt-4">
+                <div class="main">
+                    <div class="headingtext mb-3 py-4">
+                        <span class="text text-1">Divide </span>
+                        <span class="text text-2">cash </span>
+                        <span class="text text-3">per </span>
+                        <span class="text text-4">each</span>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 mx-5 mt-5">
+                            <div class="inputBox">
+                                <span>Total Cash</span>
+                                <div class="box">
+                                    <div class="icon"><i class="fas fa-cash-register"></i></div>
+                                    <input type="number" class="txttotalcash" />
+                                </div>
+                            </div>
+                            <div class="inputBox">
+                                <span>Total Person</span>
+                                <div class="box">
+                                    <div class="icon"><i class="fab fa-wolf-pack-battalion"></i></div>
+                                    <input type="number" class="txttotalperson" />
+                                </div>
+                            </div>
+                            <div class="inputBox">
+                                <div class="box">
+                                    <input type="button" value="Calculate" class="btncalculate" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="show-result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        $(".btncalculate").click(function () {
+            var totalcash = $(".txttotalcash").val();
+            var totalperson = $(".txttotalperson").val();
+            var result = Number(totalcash / totalperson);
+            var finalresult = result.toFixed(0);
+            $(".show-result").text("Each Person Pay " + finalresult);
+        });
+    </script>
+</body>
+
+</html>

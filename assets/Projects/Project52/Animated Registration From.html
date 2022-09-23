@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+  <div class="container-fluid">
+  
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center mt-3">
+        <input type="checkbox" name="" class="toggleCheckbox" />
+      </div>
+    </div>
+  
+    <!-- Signin /Up Dropdown Page Start -->
+    <div class="row Dark mt-5">
+      <div class="col-md-8 col-lg-6 m-auto p-3 Account">
+        <div class="inner-box" id="card">
+  
+          <div class="card-front p-4">
+  
+            <button type="button" class="btn m-0 btnloginpage">Log-In</button>
+            <button type="button" class="btn m-0 btnsignuppage">Sign-Up</button>
+  
+            <div class="input-group emailgroupsignin mt-5">
+              <i class="fa fa-envelope emailiconsignin "></i>
+              <input id="txtUsername" runat="server" class="form-control shadow-none emailinputsignin" type="email"
+                name="EMAIL" placeholder="E-mail Or username" />
+            </div>
+  
+            <div class="input-group passgroupsignin mt-3 ">
+              <i class="fa fa-lock passiconsignin "></i>
+              <input id="txtPassword" runat="server" class="form-control shadow-none passinputsignin" type="password"
+                name="Pass" placeholder="Password" />
+            </div>
+  
+            <div class="checkboxcontainer mt-3">
+              <label>
+                Keep me logged In
+                <input id="CheckBox1" runat="server" type="checkbox" name="" />
+                <span class="check"></span>
+              </label>
+            </div>
+  
+            <button id="btnlogin" runat="server" onserverclick="btnlogin_click" type="button"
+              class="btn btn-block mt-3 btnsignin">log-In</button>
+  
+            <asp:Label ID="lblMsgsignin" runat="server" Visible="false" Text=""></asp:Label>
+  
+            <p class="mt-4 text-center font-weight-bolder">OR</p>
+            <p class="mt-2 text-center">Sign-In with your social account</p>
+  
+            <a class="media-btn media-facebook mt-3 m-auto" href="#">
+              <i class="fa fa-facebook"></i>
+              <span>Sign-In with Facebook</span></a>
+  
+            <a class="media-btn media-google mt-3 m-auto" href="#">
+              <i class="fa fa-google"></i>
+              <span>Sign-In with Google</span></a>
+  
+            <a class="media-btn media-twitter mt-3 m-auto" href="#">
+              <i class="fa fa-twitter"></i>
+              <span>Sign-In with Twitter</span></a>
+  
+          </div>
+  
+          <div class="card-back p-4">
+            <button type="button" class="btn m-0 btnloginpage">Log-In</button>
+            <button type="button" class="btn m-0 btnsignuppage">Sign-Up</button>
+  
+  
+  
+            <div class="outer-area mt-3">
+              <div class="drag-area">
+                <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <header>Drag & Drop to Upload File</header>
+                <span>OR</span>
+                <button type="button" class="btnchooseimg">Browse File</button>
+                <input id="FileUpload2" class="fileuploadimg" runat="server" type="file" hidden="hidden" />
+                <img src="#" id="chooseimg1" class="chooseimg" />
+              </div>
+              <input id="FileUpload1" class="fileuploadimg" runat="server" type="file" hidden="hidden" />
+  
+            </div>
+  
+            <div class="input-group emailgroup mt-3">
+              <i class="fa fa-user emailicon "></i>
+              <input id="txtUname" runat="server" class="form-control shadow-none emailinput" type="text" name="name"
+                placeholder="User Name" />
+            </div>
+  
+            <div class="input-group emailgroup mt-3">
+              <i class="fa fa-envelope emailicon "></i>
+              <input id="txtEmail" runat="server" class="form-control shadow-none emailinput" type="email" name="EMAIL"
+                placeholder="E-mail" />
+            </div>
+  
+            <div class="input-group passgroup mt-3 ">
+              <i class="fa fa-lock passicon "></i>
+              <input id="txtPass" runat="server" class="form-control shadow-none passinput" type="password" name="Pass"
+                placeholder="Password" />
+            </div>
+  
+            <div class="input-group passgroup mt-3 ">
+              <i class="fa fa-lock passicon "></i>
+              <input id="txtCPass" runat="server" class="form-control shadow-none passinput" type="password" name="cPass"
+                placeholder="Confirm Password" />
+            </div>
+  
+            <div class="input-group emailgroup mt-3">
+              <i class="fa fa-user-circle emailicon "></i>
+              <input id="txtName" runat="server" class="form-control shadow-none emailinput" type="text" name="fname"
+                placeholder="Full Name" />
+            </div>
+  
+            <button id="btnsignup" runat="server" onserverclick="btnsignup_click" type="button"
+              class="btn btn-block mt-3 btnsignupp">Sign-Up</button>
+  
+            <div class="text-center">
+              <asp:Label ID="lblMsgsignup" CssClass="lbl" runat="server" Visible="false" Text="">
+              </asp:Label>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Signin /Up Dropdown Page End -->
+    </div>
+
+  <script src="jquery/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

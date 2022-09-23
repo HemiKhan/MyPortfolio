@@ -1,0 +1,323 @@
+.BackgroundDark {
+    background: #2a2b2f;
+}
+
+.BackgroundRoyal-Blue {
+    background: #0e1538;
+}
+
+.SettingTheme {
+    position: fixed;
+    top: 160px;
+    right: 0;
+    width: 30%;
+    z-index: 999;
+}
+
+/* Dark SettingTheme Style Start */
+
+.Darktheme .settingicon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 10%;
+    background: #2a2b2f;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 225, 0.1);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: width 0.7s ease-in-out;
+}
+
+    .Darktheme .settingicon span {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .Darktheme .settingicon img {
+        height: 40px;
+        width: 40px;
+    }
+
+.Darktheme .DarkLightTheme {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background: #2a2b2f;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 225, 0.1);
+    cursor: pointer;
+    border-radius: 6px;
+    padding-left: 6px;
+    display: none;
+}
+
+    .Darktheme .DarkLightTheme.show {
+        display: block;
+    }
+
+    .Darktheme .DarkLightTheme::before {
+        content: '\f185';
+        color: #fff;
+        font-family: fontAwesome;
+        font-size: 28px;
+    }
+
+    .Darktheme .DarkLightTheme.active::before {
+        content: '\f186';
+        color: #31344b;
+    }
+
+.Darktheme .settingicon.move {
+    width: 97%;
+    transition: width .7s ease-in-out;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.Darktheme .Settingmenu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 0;
+    min-height: 180px;
+    color: #fff;
+    background: #2a2b2f;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 225, 0.1);
+    padding-top: 4px;
+    padding-left: 4px;
+    border-bottom-left-radius: 20px;
+    visibility: hidden;
+    transition: all 0.7s ease-in-out;
+}
+
+    .Darktheme .Settingmenu.move {
+        width: 88%;
+        visibility: visible;
+        transition: width .7s ease-in-out;
+    }
+
+/* choosetemplet-dropdown Style Start */
+
+.Darktheme .choosetemplet-drop {
+    transform: translate(0, 10%);
+    margin: auto;
+    width: 300px;
+    line-height: 50px;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: #fff;
+    background: #2a2b2f;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 225, 0.1);
+}
+
+    .Darktheme .choosetemplet-drop span {
+        float: right;
+        line-height: 50px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+.Darktheme .choosetemplet-list {
+    transform: translate(0, 4%);
+    margin: auto;
+    display: flex;
+    width: 300px;
+    height: 178px;
+    overflow: hidden;
+    border-radius: 5px;
+    display: none;
+    background: #2a2b2f;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 225, 0.1);
+}
+
+    .Darktheme .choosetemplet-list.show {
+        display: block;
+        display: flex;
+    }
+
+    .Darktheme .choosetemplet-list ul {
+        list-style: none;
+        width: 400px;
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .Darktheme .choosetemplet-list ul li {
+            line-height: 55px;
+        }
+
+            .Darktheme .choosetemplet-list ul li a {
+                position: relative;
+                text-decoration: none;
+                color: #fff;
+                display: flex;
+                font-size: 18px;
+                font-weight: bolder;
+                padding: 0 44px;
+                align-items: center;
+                border-radius: 8px;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 225, 0.1);
+            }
+
+            .Darktheme .choosetemplet-list ul li:hover a {
+                box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 225, 0.1);
+            }
+
+            .Darktheme .choosetemplet-list ul li a .icon {
+                height: 40px;
+                width: 40px;
+                margin-right: 13px;
+                background: #ffffff1a;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                border-radius: 50%;
+            }
+
+                .Darktheme .choosetemplet-list ul li a .icon img {
+                    width: 35px;
+                    height: 35px;
+                }
+
+/* choosetemplet-dropdown Style End */
+
+/* Choose Theme Style Start */
+.Darktheme .choosetheme {
+    width: 90px;
+    height: 40px;
+    border-radius: 5%;
+    display: inline-block;
+}
+
+    .Darktheme .choosetheme:hover {
+        border-radius: 50%;
+        outline: 3px solid #31344b;
+    }
+
+    .Darktheme .choosetheme span {
+        color: #31344b;
+        transition: opacity .25s;
+        font-size: 35px;
+        line-height: 35px;
+        opacity: 0;
+    }
+
+    .Darktheme .choosetheme.active span {
+        opacity: 1;
+    }
+
+.Darktheme .choosetheme1 {
+    --fleck-seed: 163453;
+    --fleck-count: 100;
+    --fleck-size-base: 5px;
+    --fleck-color-1: #ffb5d7;
+    --fleck-color-2: #a6bfeb;
+    --fleck-color-3: #cce0ee;
+    --fleck-color-4: #ebaedc;
+    --background-color: #ecf0f3;
+    width: 100%;
+    background-color: var(--background-color);
+    background-image: paint(fleck) !important;
+}
+
+.Darktheme .choosetheme2 {
+    --fleck-seed: 123453;
+    --fleck-count: 1000;
+    --fleck-size-base: 4px;
+    --fleck-color-1: #2a2b2f;
+    --fleck-color-2: #2a2b2f;
+    --fleck-color-3: #2a2b2f;
+    --fleck-color-4: #e8ad3c;
+    --fleck-color-5: #2a2b2f;
+    --background-color: #2a2b2f;
+    width: 100%;
+    background-color: var(--background-color);
+    background-image: paint(fleck) !important;
+}
+
+.Darktheme .choosetheme3 {
+    --fleck-seed: 123449;
+    --fleck-count: 1000;
+    --fleck-size-base: 4px;
+    --fleck-color-1: #0e1538;
+    --fleck-color-2: #0e1538;
+    --fleck-color-3: #d400d4;
+    --fleck-color-4: #00ccff;
+    --fleck-color-5: #0e1538;
+    --fleck-color-6: #0e1538;
+    --background-color: #0e1538;
+    width: 75%;
+    background-color: var(--background-color);
+    background-image: paint(fleck) !important;
+}
+
+/* Choose Theme Style End */
+
+.hr1 {
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(12, 219, 127), rgba(0, 0, 0, 0));
+}
+
+/* Choose Card Style Start */
+.Darktheme .Card {
+    width: 100px;
+    height: 90px;
+    border-radius: 5%;
+    display: inline-block;
+}
+
+.Darktheme .choosecard1
+{
+    background-image: url(../img/LightCard1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.Darktheme .choosecard2
+{
+    background-image: url(../img/LightCard2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.Darktheme .choosecard3
+{
+    background-image: url(../img/LightCard3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+/* Choose Card Style End */
+
+/* Color Style End */
+
+/* Resposive Media Style Start */
+@media (max-width: 992px) {
+    .SettingTheme {
+        width: 45% !important;
+        top: 100px;
+    }
+}
+
+@media (max-width: 710px) {
+    .SettingTheme {
+        width: 70% !important;
+        top: 150px;
+    }
+}
+
+@media (max-width: 552px) {
+    .SettingTheme {
+        width: 90% !important;
+        top: 150px;
+    }
+}
+
+/* Resposive Media Style End */

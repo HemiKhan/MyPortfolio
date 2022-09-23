@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Real Time Editor</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center m-2">
+            <div class="col-md-6">
+                <textarea id="div1" onkeyup="refresh()" placeholder="Start code here......">
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+                                        
+    </style>            
+</head>
+<body>
+                                        
+            
+    <script></script>                
+</body>
+</html>                                     
+                    </textarea>
+            </div>
+
+            <div class="col-md-6">
+                <iframe id="viewer"></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+        function refresh() {
+            var textContent = document.getElementById('div1').value;
+            document.getElementById('viewer').srcdoc = textContent;
+        }
+    </script>
+</body>
+
+</html>

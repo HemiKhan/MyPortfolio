@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Watch Everything</title>
+    <link rel="icon" href="img/icon.png" />
+    <link rel="stylesheet" href="css/indexstyle.css" />
+    <link rel="stylesheet" href="css/Scrollbar.css" />
+    <link rel="stylesheet" href="css/adResponsive.css" />
+    <link rel="stylesheet" href="css/Scroll-up-btn.css" />
+    <link rel="stylesheet" href="css/Paginationstyle.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/ToggleStyle.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Scroll-btn -->
+    <div class="scroll-up-btn">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- Header section start -->
+    <div class="container-fluid sticky-top">
+        <div class="row justify-content-center">
+            <div class="col-md col-sm col-lg">
+
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <img src="img/icon.png" class="mr-2"></img>
+                    <a href="index.html" class="navbar-brand text-danger font-weight-bolder ">
+                        <span class="i">i</span><span class="watcheverything">WatchEverything</span></a>
+
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav mr-auto">
+
+                            <li class="nav-item">
+                                <p><a href="index.html" class="nav-link">Home</a></p>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Movies</a>
+                                <div class="dropdown-menu bg-dark">
+                                    <p class="list dropdown-item text-danger font-weight-bolder"
+                                        data-filter="Bollywood">Bollywood Movies</p>
+                                    <p class="list dropdown-item text-danger font-weight-bolder"
+                                        data-filter="Hollywood">Hollywood Movies</p>
+                                    <p class="list dropdown-item text-danger font-weight-bolder"
+                                        data-filter="Shindidubbed">South Hindi Dubbed Movies</p>
+                                    <p class="list dropdown-item text-danger font-weight-bolder" data-filter="Comedy">
+                                        Comedy Movies</p>
+                                    <p class="list dropdown-item text-danger font-weight-bolder"
+                                        data-filter="Animation">
+                                        Animation Movies</p>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="Islamic/islamicvideos.html" class="list nav-link">Islamic Videos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="Gaming/gamingvideos.html" class="list nav-link">Gaming Videos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <p class="list nav-link" data-filter="hindidubbed">
+                                    Hindi Dubbed Movies</p>
+
+                            </li>
+
+                        </ul>
+                        <form action="" class="form-inline">
+                            <input type="search" class="search-item form-control mr-sm-2" placeholder="Search Here....">
+
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main section start -->
+    <div class="container-fluid main ">
+        <div class="row">
+
+            <div class="col-md-12 col-lg-12 col-sm-12">
+
+                <div class="row list-wrapper containerItems justify-content-center">
+
+
+                    <div class="list-item Hollywood hindidubbed" data-search="godzilla Vs kong latestmovies">
+                        <div class="content">
+                            <a href="MoviesList/GodzilaVsKong/GodzilaVsKong.html">
+                                <img src="MoviesList/GodzilaVsKong/img/2.jpg">
+                                <div class="text">
+                                    <h3>Godzilla Vs Kong (2021)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood"
+                        data-search="mortal kombat Mortal Kombat latest movies">
+                        <div class="content">
+                            <a href="MoviesList/MortalKombat/MortalKombat.html">
+                                <img src="MoviesList/MortalKombat/img/1.jpg">
+                                <div class="text">
+                                    <h3>Mortal Kombat (2021)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood" data-search="stowaway Stowaway latestmovies">
+                        <div class="content">
+                            <a href="MoviesList/Stowaway/Stowaway.html">
+                                <img src="MoviesList/Stowaway/img/1.jpg">
+                                <div class="text">
+                                    <h3>Stowaway (2021)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Shindidubbed"
+                        data-search="Pogaru pogaru hindidubbedmovies latestmovies">
+                        <div class="content">
+                            <a href="MoviesList/Pogaru/Pogaru.html">
+                                <img src="MoviesList/Pogaru/img/1.jpg">
+                                <div class="text">
+                                    <h3>Pogaru (2021)</h3>
+                                    <p>Dual audio {Hindi Dubbed}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Shindidubbed" data-search="Kaappaan kaappaan hindidubbedmovies">
+                        <div class="content">
+                            <a href="MoviesList/Kaappaan/Kaappaan.html">
+                                <img src="MoviesList/Kaappaan/img/1.jpg">
+                                <div class="text">
+                                    <h3>Kaappaan (2019)</h3>
+                                    <p>Dual audio {Hindi Dubbed}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="list-item hindidubbed Hollywood" data-search="300: Rise of an Empire rise of an empire">
+                        <div class="content">
+                            <a href="MoviesList/300 Rise of an Empire/300 Rise of an Empire.html">
+                                <img src="MoviesList/300 Rise of an Empire/img/1.jpg">
+                                <div class="text">
+                                    <h3>300: Rise of an Empire (2014)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood"
+                        data-search="X-Men 6 The Wolverine the wolverine X Men x men sci fi movies">
+                        <div class="content">
+                            <a href="MoviesList/Xmen-6/Xmen-6.html">
+                                <img src="MoviesList/Xmen-6/img/1.jpg">
+                                <div class="text">
+                                    <h3>X-Men 6 The Wolverine (2013)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood"
+                        data-search="X-Men 5 First Class first class X Men x men sci fi movies">
+                        <div class="content">
+                            <a href="MoviesList/Xmen-5/Xmen-5.html">
+                                <img src="MoviesList/Xmen-5/img/1.jpg">
+                                <div class="text">
+                                    <h3>X-Men: 5 First Class (2009)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood"
+                        data-search="X-Men 5 Origins Wolverine origins wolverine X Men x men sci fi movies">
+                        <div class="content">
+                            <a href="MoviesList/Xmen-4/Xmen-4.html">
+                                <img src="MoviesList/Xmen-4/img/1.jpg">
+                                <div class="text">
+                                    <h3>X-Men 4 Origins: Wolverine (2008)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood"
+                        data-search="X-Men 5 The Last Stand the last stand X Men x men sci fi movies">
+                        <div class="content">
+                            <a href="MoviesList/Xmen-3/Xmen-3.html">
+                                <img src="MoviesList/Xmen-3/img/1.jpg">
+                                <div class="text">
+                                    <h3>X-Men 3 The Last Stand (2006)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood"
+                        data-search="X-Men 5 United united X Men x men sci fi movies">
+                        <div class="content">
+                            <a href="MoviesList/Xmen-2/Xmen-2.html">
+                                <img src="MoviesList/Xmen-2/img/1.jpg">
+                                <div class="text">
+                                    <h3>X-Men 2 United (2003)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood" data-search="X-Men 1 X Men x men sci fi movies">
+                        <div class="content">
+                            <a href="MoviesList/Xmen-1/Xmen-1.html">
+                                <img src="MoviesList/Xmen-1/img/1.jpg">
+                                <div class="text">
+                                    <h3>X-Men (2000)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood" data-search="outide of the wire">
+                        <div class="content">
+                            <a href="MoviesList/OutsidetheWire/OutsidetheWire.html">
+                                <img src="MoviesList/OutsidetheWire/img/1.jpg">
+                                <div class="text">
+                                    <h3>Outside The Wire (2021)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item Animation Hollywood" data-search="raya and the last dragon latestmovies">
+                        <div class="content">
+                            <a href="MoviesList/RayaandtheLastDragon/RayaandtheLastDragon.html">
+                                <img src="MoviesList/RayaandtheLastDragon/img/1.jpg">
+                                <div class="text">
+                                    <h3>Raya and the Last Dragon (2021)</h3>
+                                    <p>audio {English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item Hollywood hindidubbed" data-search="thunderforce ThunderForce latestmovies">
+                        <div class="content">
+                            <a href="MoviesList/ThunderForce/ThunderForce.html">
+                                <img src="MoviesList/ThunderForce/img/1.jpg">
+                                <div class="text">
+                                    <h3>Thunder Force</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="list-item Hollywood hindidubbed" data-search="Space Sweepers space sweepers">
+                        <div class="content">
+                            <a href="MoviesList/SpaceSweepers/SpaceSweepers.html">
+                                <img src="MoviesList/SpaceSweepers/img/1.jpg">
+                                <div class="text">
+                                    <h3>Space Sweepers (2021)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item Animation Hollywood hindidubbed"
+                        data-search="Monster Trucks monster trucks latest movies">
+                        <div class="content">
+                            <a href="MoviesList/MonsterTrucks/MonsterTrucks.html">
+                                <img src="MoviesList/MonsterTrucks/img/1.jpg">
+                                <div class="text">
+                                    <h3>Monster Trucks (2021)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item Hollywood hindidubbed"
+                        data-search="Dawn of the Planet of the Apes dawn of the planet of the apes">
+                        <div class="content">
+                            <a href="MoviesList/Dawn of the Planet of the Apes/Dawn of the Planet of the Apes.html">
+                                <img src="MoviesList/Dawn of the Planet of the Apes/img/1.jpg">
+                                <div class="text">
+                                    <h3>Dawn of the Planet of the Apes (2014)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item Hollywood hindidubbed"
+                        data-search="War for the Planet of the Apes war for the planet of the apes">
+                        <div class="content">
+                            <a href="MoviesList/War for the Planet of the Apes/War for the Planet of the Apes.html">
+                                <img src="MoviesList/War for the Planet of the Apes/img/1.jpg">
+                                <div class="text">
+                                    <h3>War for the Planet of the Apes (2017)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="list-item Hollywood hindidubbed"
+                        data-search="valerian and the city of a thousand planets latestmovies">
+                        <div class="content">
+                            <a
+                                href="MoviesList/Valerian and the City of a Thousand Planets/Valerian and the City of a Thousand Planets.html">
+                                <img src="MoviesList/Valerian and the City of a Thousand Planets/img/1.jpg">
+                                <div class="text">
+                                    <h3>Valerian the City of Planets (2017)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item Hollywood"
+                        data-search="Zack Snyder’s justice league zack snyder’s latest movies">
+                        <div class="content">
+                            <a href="MoviesList/ZackSnyder’sJusticeLeague/ZackSnyder’sJusticeLeague.html">
+                                <img src="MoviesList/ZackSnyder’sJusticeLeague/img/1.jpg">
+                                <div class="text">
+                                    <h3>Zack Snyder’s Justice League (2021)</h3>
+                                    <p>audio {English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Shindidubbed" data-search="Aswathama aswathama hindidubbedmovies">
+                        <div class="content">
+                            <a href="MoviesList/Aswathama/Aswathama.html">
+                                <img src="MoviesList/Aswathama/img/1.jpg">
+                                <div class="text">
+                                    <h3>Aswathama (2020)</h3>
+                                    <p>Dual audio {Hindi Dubbed}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item Hollywood hindidubbed"
+                        data-search="MonsterHunter monster hunter latestmovies">
+                        <div class="content">
+                            <a href="MoviesList/MonsterHunter/MonsterHunter.html">
+                                <img src="MoviesList/MonsterHunter/img/1.jpg">
+                                <div class="text">
+                                    <h3>Monster Hunter (2020)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item Hollywood hindidubbed" data-search="MaxPayne max payne">
+                        <div class="content">
+                            <a href="MoviesList/MaxPayne/MaxPayne.html">
+                                <img src="MoviesList/MaxPayne/img/1.jpg">
+                                <div class="text">
+                                    <h3>Max Payne (2008)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item Hollywood hindidubbed" data-search="TheLastSamurai the last samurai">
+                        <div class="content">
+                            <a href="MoviesList/TheLastSamurai/TheLastSamurai.html">
+                                <img src="MoviesList/TheLastSamurai/img/1.jpg">
+                                <div class="text">
+                                    <h3>The Last Samurai (2003)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item Comedy Hollywood hindidubbed"
+                        data-search="Mr. Bean's Holiday mr. bean's holiday">
+                        <div class="content">
+                            <a href="MoviesList/Mr. Bean's Holiday/Mr. Bean's Holiday.html">
+                                <img src="MoviesList/Mr. Bean's Holiday/img/1.jpg">
+                                <div class="text">
+                                    <h3>Mr. Bean's Holiday (2007)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood"
+                        data-search="Green Lantern green lantern hindidubbedmovies">
+                        <div class="content">
+                            <a href="MoviesList/GreenLantern/GreenLantern.html">
+                                <img src="MoviesList/GreenLantern/img/1.jpg">
+                                <div class="text">
+                                    <h3>Green Lantern (2011)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood"
+                        data-search="Guardians of the Galaxy guardians of the galaxy">
+                        <div class="content">
+                            <a href="MoviesList/Guardians of the Galaxy/Guardians of the Galaxy.html">
+                                <img src="MoviesList/Guardians of the Galaxy/img/1.jpg">
+                                <div class="text">
+                                    <h3>Guardians of the Galaxy (2014)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood"
+                        data-search="Guardians of the Galaxy Vol.2 guardians of the galaxy vol.2">
+                        <div class="content">
+                            <a href="MoviesList/Guardians of the Galaxy Vol.2/Guardians of the Galaxy Vol.2.html">
+                                <img src="MoviesList/Guardians of the Galaxy Vol.2/img/1.jpg">
+                                <div class="text">
+                                    <h3>Guardians of the Galaxy Vol. 2 (2017)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood" data-search="Alita Battle Angel alita battle angel">
+                        <div class="content">
+                            <a href="MoviesList/Alita-Battle-Angel/Alita-Battle-Angel.html">
+                                <img src="MoviesList/Alita-Battle-Angel/img/1.jpg">
+                                <div class="text">
+                                    <h3>Alita: Battle Angel (2019)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood" data-search="Spider-Man 3 spiderman ">
+                        <div class="content">
+                            <a href="MoviesList/Spider-Man-3/Spider-Man-3.html">
+                                <img src="MoviesList/Spider-Man-3/img/1.jpg">
+                                <div class="text">
+                                    <h3>Spider-Man 3 (2007)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood" data-search="Spider-Man 2 spiderman">
+                        <div class="content">
+                            <a href="MoviesList/Spider-Man-2/Spider-Man-2.html">
+                                <img src="MoviesList/Spider-Man-2/img/1.jpg">
+                                <div class="text">
+                                    <h3>Spider-Man 2 (2004)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item Hollywood"
+                        data-search="King Arthur: Legend of the Sword kingarthur arthur king ">
+                        <div class="content">
+                            <a href="MoviesList/King Arthur Legend of the Sword/King Arthur Legend of the Sword.html">
+                                <img src="MoviesList/King Arthur Legend of the Sword/img/1.jpg">
+                                <div class="text">
+                                    <h3>King Arthur: Legend of the Sword (2017)</h3>
+                                    <p>audio {English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood" data-search="Gods of Egypt gods of egypt">
+                        <div class="content">
+                            <a href="MoviesList/Gods-of-Egypt/Gods-of-Egypt.html">
+                                <img src="MoviesList/Gods-of-Egypt/img/3.jpg">
+                                <div class="text">
+                                    <h3>Gods of Egypt (2016)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Shindidubbed"
+                        data-search="Saakshyam-Pralay saakshyampralay The Destroyer the destroyer hindidubbedmovies">
+                        <div class="content">
+                            <a href="MoviesList/The-Destroyer/The-Destroyer.html">
+                                <img src="MoviesList/The-Destroyer/img/1.jpg">
+                                <div class="text">
+                                    <h3>Saakshyam-Pralay The Destroyer (2020)</h3>
+                                    <p>Dual audio {Hindi Dubbed}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood"
+                        data-search="How to Train Your Dragon The Hidden World how to train your dragon the hidden world hindidubbedmovies">
+                        <div class="content">
+                            <a
+                                href="MoviesList/How to Train Your Dragon The Hidden World/How to Train Your Dragon The Hidden.html">
+                                <img src="MoviesList/How to Train Your Dragon The Hidden World/img/1.jpg">
+                                <div class="text">
+                                    <h3>How to Train Your Dragon (2019)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood"
+                        data-search="Mulan mulan hindidubbedmovies latestmovies">
+                        <div class="content">
+                            <a href="MoviesList/Mulan/Mulan.html">
+                                <img src="MoviesList/Mulan/img/1.jpg">
+                                <div class="text">
+                                    <h3>Mulan (2020)</h3>
+                                    <p>Dual audio {Hindi Chinese}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood"
+                        data-search="Terminator Dark Fate terminator dark fate hindidubbedmovies">
+                        <div class="content">
+                            <a href="MoviesList/Terminator Dark Fate/Terminator Dark Fate.html">
+                                <img src="MoviesList/Terminator Dark Fate/img/1.jpg">
+                                <div class="text">
+                                    <h3>Terminator: Dark Fate (2019)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood"
+                        data-search="London Has Fallen london has fallen hindidubbedmovies">
+                        <div class="content">
+                            <a href="MoviesList/London Has Fallen/London Has Fallen.html">
+                                <img src="MoviesList/London Has Fallen/img/1.jpg">
+                                <div class="text">
+                                    <h3>London Has Fallen (2016)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="list-item hindidubbed Hollywood" data-search="Insurgent insurgent hindidubbedmovies">
+                        <div class="content">
+                            <a href="MoviesList/Insurgent/Insurgent.html">
+                                <img src="MoviesList/Insurgent/img/1.jpg">
+                                <div class="text">
+                                    <h3>Insurgent (2015)</h3>
+                                    <p>Dual audio {Hindi English}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="pagination-container"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="">IWatchEverything</a> | <span class="fa fa-copyright"></span> 2021 All
+            rights reserved.</span>
+    </footer>
+
+
+    <!-- Js Link section start -->
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"
+        integrity="sha512-9Dh726RTZVE1k5R1RNEzk1ex4AoRjxNMFKtZdcWaG2KUgjEmFYN3n17YLUrbHm47CRQB1mvVBHDFXrcnx/deDA=="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/pagination.js"></script>
+    <script src="js/e-search.min.js"></script>
+    <script src="js/liveSearch.js"></script>
+    <script src="js/Scroll-up.js"></script>
+    <script src="js/Cardvanilla-tilt.js"></script>
+    <script src="js/CardMoviing.js"></script>
+    <script src="js/Filtermovie.js"></script>
+
+</body>
+
+</html>

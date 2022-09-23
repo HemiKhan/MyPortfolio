@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Pacifico&family=Ubuntu+Mono:ital,wght@1,700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+}
+
+/* Main Styling start */
+
+.main {
+	font-family: 'Ubuntu Mono', monospace;
+	background-color: rgb(27, 0, 27);
+	min-height: 80vh;
+}
+
+.list-wrapper {
+	overflow: hidden;
+	width: 100%;
+}
+
+.list-item {
+	background: linear-gradient(to right, rgb(80, 12, 10), rgb(209, 11, 4));
+	margin-bottom: 10px;
+	box-shadow: 0 0 15px 0 #f7797d;
+	width: 220px;
+	max-height: 385px;
+	margin: 25px;
+	position: relative;
+	cursor: pointer;
+	float: left;
+	border-radius: 20px;
+}
+
+.list-item a i {
+	cursor: pointer;
+	font-size: 60px;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	color: var(--light);
+	opacity: 0.85;
+	transition: var(--ease);
+}
+
+.list-item a i:hover {
+	opacity: 1;
+}
+
+.list-item a {
+	text-decoration: none;
+	color: #3a0707;
+}
+
+.list-item a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.list-item img {
+	width: 220px;
+	height: 300px;
+	border-radius: 20px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.list-item .text {
+	text-align: center;
+}
+
+.text h3 {
+	font-size: 19px;
+}
+
+.text p {
+	font-size: 15px;
+}
+
+h3,
+h1 {
+	color: #fff;
+}

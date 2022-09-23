@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ecf0f3;
+    box-shadow: inset -3px -3px 7px #ffffff,
+        inset 3px 3px 5px #ceced1;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Header Style Start */
+nav {
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,
+        3px 3px 5px #ceced1;
+    border-bottom: 2px solid #afb3b3;
+}
+
+.navbar-toggler {
+    background: #afb3b3;
+    color: #855DF9;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.navbar-brand {
+    color: #855DF9 !important;
+    font-weight: bolder;
+}
+
+.nav-link,
+i {
+    color: #855DF9;
+    font-weight: bolder;
+}
+
+.nav-link.active {
+    color: #111;
+    background: #afb3b3;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.txtsearch {
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,
+        3px 3px 5px #ceced1;
+    border-left: none;
+    outline: none;
+}
+
+.txtsearch:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: none;
+    background: #ecf0f3;
+    box-shadow: inset -3px -3px 7px #ffffff,
+        inset 3px 3px 5px #ceced1;
+}
+
+.nav-item .input-group-text {
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,
+        3px 3px 5px #ceced1;
+}
+
+/* Header Style End */
+
+/* Side Icons Style Start */
+.Sidebar-Menu {
+    position: absolute;
+    left: 0;
+    display: inline-flex;
+}
+
+.sideicons {
+    width: 45px;
+    min-height: 100vh;
+    background: #feffff;
+    box-shadow: -3px -3px 7px #ffffff,
+        3px 3px 5px #ceced1;
+    border-right: 2px solid #afb3b3;
+}
+
+.sideicons ul {
+    list-style: none;
+    margin: 13px 0;
+}
+
+.sideicons ul li {
+    margin: 0 10px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.sideicons ul .logout {
+    margin-top: 250px;
+}
+
+.sideicons ul .logout::before {
+    content: 'Logout';
+    background: #855DF9;
+    color: #fff;
+    padding: 5px;
+    font-size: 10px;
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.sideicons ul .logout:hover:before {
+    visibility: visible;
+    transition: .5s;
+}
+
+.sideicons i {
+    color: #111;
+    cursor: pointer;
+}
+
+.sideicons i:hover {
+    color: #855DF9;
+}
+
+/* Side Icons Style End */
+
+/* Side Icons Text Style Start */
+.sideiconstext {
+    width: 0;
+    height: 100vh;
+    background: #ecf0f3;
+    box-shadow: inset -3px -3px 7px #ffffff,
+        inset 3px 3px 5px #ceced1;
+    border-right: 2px solid #afb3b3;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.sideiconstext.showmenu {
+    width: 170px;
+    visibility: visible;
+}
+
+.sideiconstext ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 24px;
+    margin-right: 10px;
+}
+
+.sideiconstext ul li {
+    margin-top: 10px;
+    padding: 10px 0;
+    font-size: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.sideiconstext ul li:hover,
+.sideiconstext ul li.active {
+    background: #ffffff;
+}
+
+/* Side Icons Text Style End */
+
+.container-fluid {
+    margin-left: 216px;
+    transition: margin-left .5s;
+}
+
+.container-fluid.movecontainer {
+    margin-left: 45px;
+    transition: margin-left .5s;
+}
+
+/* UserChatBox Style Start */
+.UserChatBox {
+    min-height: 100vh;
+    background: #ecf0f3;
+    box-shadow: inset -3px -3px 7px #ffffff,
+        inset 3px 3px 5px #ceced1;
+    border-right: 2px solid #afb3b3s;
+    margin-bottom: 10px;
+}
+
+.Chats-Contaier .chatbox {
+    width: 90%;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,
+        3px 3px 5px #ceced1;
+}
+
+.Chats-Contaier .chatbox.active {
+    color: #fff;
+    background: #855DF9;
+}
+
+.Chats-Contaier .chatbox img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.Chats-Contaier .chatbox .chatdetail {
+    display: flex;
+    margin-right: auto;
+}
+
+.Chats-Contaier .chatbox .chatcontent {
+    padding-top: 25px;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.Chats-Contaier .chatbox .chatdetail .chatcontent i {
+    background: #0983BD;
+    color: #fff;
+    padding: 4px 5px;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+.Chats-Contaier .chatbox .chatdetail .chatcontent p {
+    padding-bottom: 10px;
+    font-size: 8px;
+}
+
+.Chats-Contaier .chatbox .chatdetail .chatthings .dots {
+    position: relative;
+    top: -10px;
+    left: 40px;
+    font-size: 30px;
+}
+
+.Chats-Contaier .chatbox .chatdetail .chatthings .messagetime {
+    position: relative;
+    top: 30px;
+    left: 10px;
+    font-size: 6px;
+}
+
+/* chatbox Style End */
+
+/* Mesage-Container Style Start */
+.message-container {
+    min-height: 100vh;
+    background: #ecf0f3;
+    box-shadow: inset -3px -3px 7px #ffffff,
+        inset 3px 3px 5px #ceced1;
+    border-right: 2px solid #afb3b3;
+}
+
+.message-container .user-title {
+    width: 90%;
+    height: 60px;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,
+        3px 3px 5px #ceced1;
+    border-radius: 5px;
+    margin: 27px 35px;
+}
+
+.message-container .user-title img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px 10px;
+}
+
+.message-container .user-title .userdetail .dots {
+    position: relative;
+    right: -30px;
+    bottom: 67px;
+    font-size: 50px;
+    transform: rotate(90deg);
+}
+
+.message-container .user-title .usertitle {
+    position: relative;
+    top: -60px;
+    left: 80px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.message-container .user-title .userdetail .usertitle i {
+    background: #0983BD;
+    color: #fff;
+    padding: 4px 6px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.message-container .user-title .userdetail .status {
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(209, 4, 4);
+}
+
+.message-container .message-body {
+    position: relative;
+    top: -60px;
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    overflow-x: hidden;
+    scroll-behavior: auto;
+    border-radius: 10px;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,
+        3px 3px 5px #ceced1;
+}
+
+.message-container .message-body .message {
+    display: flex;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.message-container .message-body .message img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.message-container .message-body .message .message-text {
+    width: 83%;
+    height: 50px;
+    background: #ecf0f3;
+    box-shadow: inset -3px -3px 7px #ffffff,
+        inset 3px 3px 5px #ceced1;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.message-container .message-body .message-time {
+    position: relative;
+    top: 50px;
+    right: 60px;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.message-container .message-body i {
+    position: relative;
+    top: 26px;
+    right: -5px;
+    font-size: 10px;
+    color: rgb(115, 187, 6);
+    font-weight: bolder;
+    float: right;
+}
+
+.message-container .Send-Msgbox {
+    width: 90%;
+    position: relative;
+    top: -44px;
+    margin: auto;
+}
+
+.message-container .Send-Msgbox .input-group-text {
+    border-right: none;
+    border-left: none;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,
+        3px 3px 5px #ceced1;
+}
+
+.message-container .Send-Msgbox .Input-Text {
+    outline: none;
+    border-left: none;
+    border-right: none;
+    background: #ecf0f3;
+    box-shadow: inset -3px -3px 7px #ffffff,
+        inset 3px 3px 5px #ceced1;
+}
+
+.message-container .Send-Msgbox .Input-Text:focus {
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,
+        3px 3px 5px #ceced1;
+}
+
+.message-container .Send-Msgbox .Send-Msg {
+    cursor: pointer;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,
+        3px 3px 5px #ceced1;
+}
+
+.message-container .Send-Msgbox .Send-Msg:hover {
+    box-shadow: inset -3px -3px 7px #ffffff,
+        inset 3px 3px 5px #ceced1;
+}
+
+/* Mesage-Container Style End */

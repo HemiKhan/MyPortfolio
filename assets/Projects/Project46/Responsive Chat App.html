@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <!-- Css Files Start-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/ScrollBarStyle.css" />
+    <!-- Css Files End-->
+
+    <!-- -- Icon file Start -->
+    <link href="fonts/FontAwesome-5.10.2/css/all-5.10.2.min.css" rel="stylesheet" />
+    <link href="fonts/FontAwesome-5.10.2/css/fontawesome-5.10.2.min.css" rel="stylesheet" />
+    <link href="fonts/FontAwesome-4.7.0/css/font-awesome-4.7.0.min.css" rel="stylesheet" />
+    <!-- -- Icon file End -->
+
+</head>
+
+<body>
+    <!-- Header Start -->
+    <nav class="navbar navbar-expand-lg">
+
+        <a class="navbar-brand" href="#">COMPANY</a>
+        <a class="nav-link font-weight-bold menutoggle" href="#"><i class="fas fa-align-right"></i></a>
+        <a class="nav-link active" href="#">HOME</a>
+        <a class="nav-link" href="#">MESSAGES</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-align-left"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text font-weight-bolder"><i class="fa fa-search"></i></span>
+                        </div>
+                        <input class="form-control txtsearch" type="search" placeholder="Search Something"
+                            aria-label="Search">
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-bell"></i> Notification</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Welcome Hammas Khan
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Header End -->
+
+    <!-- Sidebar Menu Start -->
+    <div class="Sidebar-Menu">
+        <div class="sideicons">
+            <ul>
+                <li><i class="fas fa-th"></i></li>
+                <li><i class="fas fa-th-list"></i></li>
+                <li><i class="fas fa-cog"></i></li>
+                <li><i class="fas fa-user-circle"></i></li>
+                <li class="logout"><i class="fas fa-sign-out-alt"></i></li>
+            </ul>
+        </div>
+        <div class="sideiconstext">
+            <ul>
+                <li><span>All Messages</span></li>
+                <li><span>Completed</span></li>
+                <li><span>Saved</span></li>
+                <li><span>Deleted</span></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Sidebar Menu End -->
+
+    <div class="container-fluid movecontainer">
+        <div class="row justify-content-center">
+
+            <div class="col-sm-4 col-md-3 col-lg-3 p-0 m-0">
+                <div class="UserChatBox">
+                    <div class="row">
+
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <h4 class="ml-3">Messages</h3>
+                                <div class="allchats dropdown ml-3">
+                                    <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        All Chats
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Facebook</a>
+                                        <a class="dropdown-item" href="#">Instagram</a>
+                                        <a class="dropdown-item" href="#">Linkedin</a>
+                                        <a class="dropdown-item" href="#">Yelp</a>
+                                        <a class="dropdown-item" href="#">Twitter</a>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-12 mt-3 Chats-Contaier">
+                            <div class="chatbox chat1 active">
+                                <div class="imgbox mr-auto">
+                                    <img src="img/1.jpg" class="chatimg1">
+                                </div>
+                                <div class="chatdetail">
+                                    <div class="chatcontent chaticon1">
+                                        <i class="fa fa-yelp"></i>
+                                        <label class="chat1name">Hammas Khan</label>
+                                        <p class="chat1msg">We Would Like to do Bussiness....</p>
+                                    </div>
+                                    <div class="chatthings">
+                                        <span class="dots">....</span>
+                                        <span class="messagetime">1 hrs ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-12 mt-2 Chats-Contaier">
+                            <div class="chatbox mt-3 chat2">
+                                <div class="imgbox mr-auto">
+                                    <img src="img/2.jpg" class="chatimg2">
+                                </div>
+                                <div class="chatdetail">
+                                    <div class="chatcontent chaticon2">
+                                        <i class="fa fa-instagram"></i>
+                                        <label class="chat2name">M Hemi Khan</label>
+                                        <p class="chat2msg">How can i Avail Your product....</p>
+                                    </div>
+                                    <div class="chatthings">
+                                        <span class="dots">....</span>
+                                        <span class="messagetime">6 hrs ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-12 mt-2 Chats-Contaier">
+                            <div class="chatbox mt-3 chat3">
+                                <div class="imgbox mr-auto">
+                                    <img src="img/3.jpg" class="chatimg3">
+                                </div>
+                                <div class="chatdetail mr-auto">
+                                    <div class="chatcontent chaticon3">
+                                        <i class="fa fa-facebook"></i>
+                                        <label class="chat3name">Muhammad</label>
+                                        <p class="chat3msg">Aslamalaikum! How Are You...?</p>
+                                    </div>
+                                    <div class="chatthings">
+                                        <span class="dots ml-auto">....</span>
+                                        <span class="messagetime">10 hrs ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-12 mt-2 Chats-Contaier">
+                            <div class="chatbox mt-3 chat4">
+                                <div class="imgbox mr-auto">
+                                    <img src="img/4.jpg" class="chatimg4">
+                                </div>
+                                <div class="chatdetail">
+                                    <div class="chatcontent chaticon4">
+                                        <i class="fa fa-linkedin"></i>
+                                        <label class="chat4name">Noor Ahmad</label>
+                                        <p class="chat4msg">Hi Blings.... Howz My Work.....?</p>
+                                    </div>
+                                    <div class="chatthings">
+                                        <span class="dots">....</span>
+                                        <span class="messagetime">24 hrs ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-12 mt-2 Chats-Contaier">
+                            <div class="chatbox mt-3 chat5">
+                                <div class="imgbox mr-auto">
+                                    <img src="img/5.jpg" class="chatimg5">
+                                </div>
+                                <div class="chatdetail">
+                                    <div class="chatcontent chaticon5">
+                                        <i class="fa fa-twitter"></i>
+                                        <label class="chat5name">Ahsan</label>
+                                        <p class="chat5msg">I have a question regarding this...</p>
+                                    </div>
+                                    <div class="chatthings">
+                                        <span class="dots">....</span>
+                                        <span class="messagetime">1 hrs ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Message Container Start-->
+            <div class="col-sm-8 col-md-9 col-lg-9 message-container">
+
+                <div class="user-title">
+                    <div class="imgbox">
+                        <img src="img/1.jpg" class="chatimage">
+                    </div>
+                    <div class="userdetail">
+                        <div class="dots float-right">....</div>
+                        <div class="usertitle">
+                            <i class="fa fa-facebook"></i>
+                            <label class="setchatname">Company Name</label>
+                            <p class="status">Offline</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-body">
+                    <div class="message mt-2">
+                        <img src="img/1.jpg" class="msgimage msgimg1">
+                        <div class="message-text txt1">
+                            write a message......
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <span class="message-time">
+                            10:20 AM
+                        </span>
+                    </div>
+                </div>
+
+                <div class="Send-Msgbox">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fas fa-plus-circle"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="Input-Text form-control" placeholder="Type Message Here....">
+                        <div class="input-group-append">
+                            <span class="Send-Msg input-group-text">
+                                <i class="fas fa-paper-plane"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Message Container End-->
+
+
+            </div>
+        </div>
+
+        <!-- Js Files Start -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        <!-- Js Files End -->
+</body>
+
+</html>

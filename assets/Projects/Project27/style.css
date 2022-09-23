@@ -1,0 +1,25 @@
+*
+{
+    margin: 0;
+    padding: 0;
+} 
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+}
+.clock
+{
+    width: auto;
+}
+.flip-clock-dot
+{
+    background: #ccc;
+}
+.flip-clock-meridium a
+{
+    color: #ccc;
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a6cf1;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper * {
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+}
+
+.inputs-wrapper {
+    background-color: #080808;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+        10px 10px 70px rgba(0, 0, 0, 0.25),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+    margin-bottom: 50px;
+}
+
+input,
+button {
+    height: 50px;
+    background-color: #ff2c74;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+input {
+    width: 60%;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+button {
+    width: 30%;
+    float: right;
+    cursor: pointer;
+    font-size: 10px;
+
+}
+
+button:hover {
+    filter: brightness(1.9);
+}
+
+button:focus {
+    outline: none;
+    border: none;
+}
+
+.outputs-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.outputs-wrapper .output-box {
+    height: 100px;
+    width: 100px;
+    background-color: #080808;
+    border-radius: 5px;
+    color: #ff2c74;
+    display: grid;
+    place-items: center;
+    padding: 10px 0;
+    margin: 2px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+span {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    color: #707070;
+    font-weight: 400;
+}

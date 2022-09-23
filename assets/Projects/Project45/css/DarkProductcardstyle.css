@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Dark .product-card .product-head .product-sale {
+    height: 24px;
+    padding: 0 14px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .025em;
+    line-height: 24px;
+    white-space: nowrap;
+    background-color: #f44336;
+}
+
+.Dark .product-card .product-head .product-rating .rating-star {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    color: #dc3545;
+}
+
+.Dark .product-card .product-head .product-rating .rating-star:nth-child(1)::before {
+    content: "\f005";
+    font-weight: 900;
+}
+
+.Dark .product-card .product-head .product-rating .rating-star:nth-child(2)::before {
+    content: "\f005";
+    font-weight: 900;
+}
+
+.Dark .product-card .product-head .product-rating .rating-star:nth-child(3)::before {
+    content: "\f005";
+    font-weight: 900;
+}
+
+.Dark .product-card .product-head .product-rating .rating-star:nth-child(4)::before {
+    content: "\f5c0";
+    font-weight: 900;
+}
+
+.Dark .product-card .product-head .product-rating .rating-star:nth-child(5)::before {
+    content: "\f005";
+}
+
+.Dark a {
+    color: #999;
+    text-decoration: none;
+}
+
+.Dark .product-card .product-img {
+    width: 100%;
+    height: 230px;
+}
+
+.Dark .product-card .product-category p {
+    transition: color .2s;
+    color: #999;
+    font-size: 12px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.Dark .product-card .product-category p:hover,
+.Dark .product-card .product-title p:hover {
+    color: #dc3545;
+}
+
+.Dark .product-card .product-title p {
+    transition: color .2s;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.Dark .product-card .product-price {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 9px 15px;
+    border-radius: 4px;
+    background-color: #fff6e3;
+    color: #232323;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.Dark .product-card .product-btns {
+    display: table;
+    width: 100%;
+    border-top: 2px solid #35363b;
+    transition: all .3s;
+    table-layout: fixed;
+}
+
+.Dark .product-card .product-btns .product-btn:hover {
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 225, 0.1);
+}
+
+.Dark .product-card .product-btns a {
+    display: table-cell;
+    position: relative;
+    height: 62px;
+    padding: 10px;
+    transition: background-color .3s;
+    border: 0;
+    border-right: 2px solid #35363b;
+    background: none;
+    color: #fff;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.Dark .product-card .product-btns i {
+    transition: all .3s;
+}
+
+.Dark .product-card .product-btns a:hover i {
+    color: #dc3545;
+}
+
+.Dark .product-card .product-btns a:hover i {
+    -webkit-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.Dark .product-card .product-btns span {
+    display: block;
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    width: 100%;
+    transition: all .3s;
+    font-size: 12px;
+    font-weight: bolder;
+    white-space: nowrap;
+    -webkit-transform: translateY(12px);
+    -ms-transform: translateY(12px);
+    transform: translateY(12px);
+    opacity: 0;
+}
+
+.Dark .product-card .product-btns a:hover span {
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px);
+    opacity: 1;
+}
+
+/* Dark Shop Card firstcard Style Start */
+.Dark .firstcard .boxshadowcard::after {
+    content: " ";
+    width: 90%;
+    margin: auto;
+    background: linear-gradient(45deg, #ff0000 0%, #ff9a00 10%, #d0de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, #ff0000 100%) repeat 0% 0% / 300% 100%;
+    position: absolute;
+    inset: -3px;
+    border-radius: 16px;
+    filter: blur(8px);
+    z-index: -1;
+    animation: rgb 6s linear infinite;
+}
+
+@keyframes rgb {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.Dark .firstcard .product-card {
+    border-radius: 8px;
+    border: 2px solid #35363b;
+    text-align: center;
+    background: #2a2b2f;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 225, 0.1);
+}
+
+@media (max-width: 576px) {
+    .boxshadowcard::after {
+        width: 97%;
+    }
+}
+
+/* Dark Shop firstcard Style End */
+
+/* Dark Product Card secondcard Style Start */
+.Dark .secondcard .product-card {
+    position: relative;
+    background: #2a2b2f;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 225, 0.1);
+    width: 270px;
+}
+
+.Dark .secondcard .product-card::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    transform: skewX(2deg) skewY(4deg);
+    background: linear-gradient(315deg, #d0de21, #0e1538, #ff0000);
+    z-index: -10;
+}
+
+.Dark .secondcard .product-card::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    transform: skewX(2deg) skewY(4deg);
+    background: linear-gradient(315deg, #d0de21, #0e1538, #ff0000);
+    filter: blur(50px);
+    z-index: -10;
+}
+
+.Dark .secondcard .product-card .product-btns a:hover i {
+    color: #d0de21;
+    font-weight: 900;
+}
+
+.Dark .secondcard .product-card .product-category,
+.Dark .secondcard .product-card .product-title,
+.Dark .secondcard .product-card .card-price {
+    text-align: center;
+}
+
+/* Dark Product Card secondcard Style End */
+
+/* Dark Product Card thirdcard Style Start */
+.Dark .thirdcard .Product-Box {
+    position: relative;
+    width: 260px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2a2b2f;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 225, 0.1);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.Dark .thirdcard .Product-Box::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background: linear-gradient(#00ccff, #d400d4);
+    animation: animate 4s linear infinite;
+}
+
+.Dark .thirdcard .Product-Box::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #2a2b2f;
+    border-radius: 16px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Dark .thirdcard .product-card {
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    z-index: 1;
+}
+
+/* Dark Product Card thirdcard Style End */
+
+/* Royal-blue Shop Card firstcard Style Start */
+.royal-blue .firstcard .boxshadowcard::after {
+    content: " ";
+    width: 90%;
+    margin: auto;
+    background: linear-gradient(45deg, #ff0000 0%, #ff9a00 10%, #d0de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, #ff0000 100%) repeat 0% 0% / 300% 100%;
+    position: absolute;
+    inset: -3px;
+    border-radius: 16px;
+    filter: blur(8px);
+    z-index: -1;
+    animation: rgb 6s linear infinite;
+}
+
+@keyframes rgb {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.royal-blue .firstcard .product-card {
+    border-radius: 8px;
+    border: 2px solid #35363b;
+    text-align: center;
+    background: #0e1538;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 225, 0.1);
+}
+
+/* Royal-blue Shop Card firstcard Style End */
+
+/* royal-blue Product Card secondcard Style Start */
+
+.royal-blue .secondcard .product-card {
+    background: #0e1538;
+}
+
+.royal-blue .secondcard .product-card::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    transform: skewX(2deg) skewY(4deg);
+    background: linear-gradient(315deg, #00ccff, #0e1538, #d400d4);
+    z-index: -10;
+}
+
+.royal-blue .secondcard .product-card::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    transform: skewX(2deg) skewY(4deg);
+    background: linear-gradient(315deg, #00ccff, #0e1538, #d400d4);
+    filter: blur(50px);
+    z-index: -10;
+}
+
+.royal-blue .secondcard .product-card .product-btns a:hover i {
+    color: #00ccff;
+    font-weight: 900;
+}
+
+/* royal-blue Product Card secondcard Style End */
+
+/* royal-blue Product Card thirdcard Style Start */
+
+.royal-blue .thirdcard .Product-Box {
+    position: relative;
+    width: 260px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0e1538;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 225, 0.1);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.royal-blue .thirdcard .Product-Box::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background: linear-gradient(#00ccff, #d400d4);
+    animation: animate 4s linear infinite;
+}
+
+.royal-blue .thirdcard .Product-Box::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #0e1538;
+    border-radius: 16px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.royal-blue .thirdcard .product-card {
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    z-index: 1;
+}
+
+/* royal-blue Product Card thirdcard Style End */

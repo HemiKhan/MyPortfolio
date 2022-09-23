@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Pacifico&family=Ubuntu+Mono:ital,wght@1,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+}
+
+
+/* Main Styling start */
+.main {
+	font-family: 'Ubuntu Mono', monospace;
+	background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+	background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+	min-height: 80vh;
+}
+
+.list-wrapper {
+	padding: 10px 45px;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.list-item {
+	background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+	margin-bottom: 10px;
+	padding: 10px;
+	box-shadow: 0 0 15px 0 #f7797d;
+	width: 220px;
+	max-height: 385px;
+	margin: 15px;
+	position: relative;
+	cursor: pointer;
+	float: left;
+	border-radius: 20px;
+}
+
+.list-item a {
+	text-decoration: none;
+	color: #3a0707;
+}
+
+.list-item a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.list-item img {
+	width: 200px;
+	height: 300px;
+	border-radius: 10px;
+}
+
+.list-item .text {
+	text-align: center;
+}
+
+.text h3 {
+	font-size: 19px;
+}
+
+.text p {
+	font-size: 15px;
+}
+
+
+

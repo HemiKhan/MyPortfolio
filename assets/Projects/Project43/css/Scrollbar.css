@@ -1,0 +1,16 @@
+/* Scroll-bar Styling */
+::-webkit-scrollbar{
+	width: 12px;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 30px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff8a00), to(#da1b60));
+	
+}
+::-webkit-scrollbar-track
+{
+	background: linear-gradient(to right, #201c29,#201c29 1px, #100e17 1px, #100e17);
+}
+::-webkit-scrollbar-thumb:hover{
+	background: -webkit-gradient(linear, left top, left bottom, from(#66ff00), to(#00c6ff));
+}

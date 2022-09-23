@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Modak");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: #2f363e !important;
+}
+
+.main {
+    height: 500px;
+    border-radius: 40px;
+    background: #2f363e;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+        10px 10px 70px rgba(0, 0, 0, 0.25),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+}
+
+.headingtext {
+    height: 80px;
+    text-align: center;
+    background: #2f363e;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+        10px 10px 70px rgba(0, 0, 0, 0.25),
+        5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.headingtext .text {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: Modak;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 0px #d2d2d22e;
+    color: transparent;
+}
+
+.text-1 {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='200px' height='200px' viewBox='0 0 400 400'%3e%3cdefs%3e%3cfilter id='filter' width='400px' height='400px' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-color='%23f5576c' flood-opacity='1' x='0' y='0' width='250px' height='250px' result='flood3'%3e%3c/feFlood%3e%3cfeFlood flood-color='%23f093fb' flood-opacity='1' x='150px' y='150px' width='250px' height='250px' result='flood4'%3e%3c/feFlood%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood3' edgeMode='none' result='blur1'%3e%3c/feGaussianBlur%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood4' edgeMode='none' result='blur2'%3e%3c/feGaussianBlur%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur2' in2='SourceGraphic' result='blend5'%3e%3c/feBlend%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur1' in2='blend5' result='blend6'%3e%3c/feBlend%3e%3c/filter%3e%3c/defs%3e%3crect width='400' height='400' x='0' y='0' fill='%23fee140' filter='url(%23filter)'%3e%3c/rect%3e%3c/svg%3e");
+}
+
+.text-2 {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='200px' height='200px' viewBox='0 0 400 400'%3e%3cdefs%3e%3cfilter id='filter' width='400px' height='400px' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-color='%238fd3f4' flood-opacity='1' x='0' y='0' width='250px' height='250px' result='flood3'%3e%3c/feFlood%3e%3cfeFlood flood-color='%2396e6a1' flood-opacity='1' x='150px' y='150px' width='250px' height='250px' result='flood4'%3e%3c/feFlood%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood3' edgeMode='none' result='blur1'%3e%3c/feGaussianBlur%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood4' edgeMode='none' result='blur2'%3e%3c/feGaussianBlur%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur2' in2='SourceGraphic' result='blend5'%3e%3c/feBlend%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur1' in2='blend5' result='blend6'%3e%3c/feBlend%3e%3c/filter%3e%3c/defs%3e%3crect width='400' height='400' x='0' y='0' fill='%23d4fc79' filter='url(%23filter)'%3e%3c/rect%3e%3c/svg%3e");
+}
+
+.text-3 {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='200px' height='200px' viewBox='0 0 400 400'%3e%3cdefs%3e%3cfilter id='filter' width='400px' height='400px' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-color='%23cd9cf2' flood-opacity='1' x='0' y='0' width='250px' height='250px' result='flood3'%3e%3c/feFlood%3e%3cfeFlood flood-color='%23c2e9fb' flood-opacity='1' x='150px' y='150px' width='250px' height='250px' result='flood4'%3e%3c/feFlood%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood3' edgeMode='none' result='blur1'%3e%3c/feGaussianBlur%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood4' edgeMode='none' result='blur2'%3e%3c/feGaussianBlur%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur2' in2='SourceGraphic' result='blend5'%3e%3c/feBlend%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur1' in2='blend5' result='blend6'%3e%3c/feBlend%3e%3c/filter%3e%3c/defs%3e%3crect width='400' height='400' x='0' y='0' fill='%2366a6ff' filter='url(%23filter)'%3e%3c/rect%3e%3c/svg%3e");
+}
+
+.text-4 {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='200px' height='200px' viewBox='0 0 400 400'%3e%3cdefs%3e%3cfilter id='filter' width='400px' height='400px' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-color='%230fd850' flood-opacity='1' x='0' y='0' width='250px' height='250px' result='flood3'%3e%3c/feFlood%3e%3cfeFlood flood-color='%2320E2D7' flood-opacity='1' x='80px' y='160px' width='250px' height='250px' result='flood4'%3e%3c/feFlood%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood3' edgeMode='none' result='blur1'%3e%3c/feGaussianBlur%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood4' edgeMode='none' result='blur2'%3e%3c/feGaussianBlur%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur2' in2='SourceGraphic' result='blend5'%3e%3c/feBlend%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur1' in2='blend5' result='blend6'%3e%3c/feBlend%3e%3c/filter%3e%3c/defs%3e%3crect width='400' height='400' x='0' y='0' fill='%23fbed96' filter='url(%23filter)'%3e%3c/rect%3e%3c/svg%3e");
+}
+
+
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inputBox span {
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75em;
+    border-left: 4px solid #fff;
+    padding-left: 4px;
+    line-height: 1em;
+}
+
+.inputBox .box {
+    display: flex;
+}
+
+.inputBox .box .icon {
+    position: relative;
+    min-width: 40px;
+    height: 40px;
+    background: #ff2c74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 1.15em;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.inputBox .box input {
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.inputBox .box .btncalculate {
+    background: #1f83f2;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.inputBox .box .btncalculate:hover {
+    filter: brightness(1.1);
+}
+
+.show-result {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2em;
+    font-family: Modak;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 3px 3px 0px #d2d2d22e;
+    color: transparent;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='200px' height='200px' viewBox='0 0 400 400'%3e%3cdefs%3e%3cfilter id='filter' width='400px' height='400px' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-color='%23f5576c' flood-opacity='1' x='0' y='0' width='250px' height='250px' result='flood3'%3e%3c/feFlood%3e%3cfeFlood flood-color='%23f093fb' flood-opacity='1' x='150px' y='150px' width='250px' height='250px' result='flood4'%3e%3c/feFlood%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood3' edgeMode='none' result='blur1'%3e%3c/feGaussianBlur%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood4' edgeMode='none' result='blur2'%3e%3c/feGaussianBlur%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur2' in2='SourceGraphic' result='blend5'%3e%3c/feBlend%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur1' in2='blend5' result='blend6'%3e%3c/feBlend%3e%3c/filter%3e%3c/defs%3e%3crect width='400' height='400' x='0' y='0' fill='%23fee140' filter='url(%23filter)'%3e%3c/rect%3e%3c/svg%3e");
+}
